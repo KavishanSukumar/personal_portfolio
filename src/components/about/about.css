@@ -71,6 +71,74 @@
     color: var(--color-light);
 }
 
+/* =====================Modals================================= */
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: var(--transition);
+}
+
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal__box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    overflow-y: auto;
+    background: var(--color-bg-variant);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+    padding: 3rem 3rem;
+    z-index: 101;
+
+}
+
+.modal__box h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.aboutmecomponent__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+.aboutmecomponent__container>h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.aboutmecomponent__details {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 9fr 2fr;
+}
+
+.aboutmecomponent__details>div h4 {
+    font-size: 0.9rem;
+}
+
+.aboutmecomponent__details>div small {
+    font-size: 0.8rem;
+}
+
 
 /* =====================MEDIA QUERIES (MD)===================== */
 @media screen and (max-width: 1024px) {
@@ -86,6 +154,11 @@
 
     .about__content p {
         margin: 1rem 0 1.5rem;
+    }
+
+    .modal__box {
+        width: 90%;
+
     }
 }
 
@@ -107,5 +180,18 @@
 
     .about__content p {
         margin: 1.5rem 0;
+    }
+
+    .modal__box {
+        width: 100%;
+
+    }
+
+    .aboutmecomponent__details>div h4 {
+        font-size: 0.7rem;
+    }
+
+    .aboutmecomponent__details>div small {
+        font-size: 0.6rem;
     }
 }
