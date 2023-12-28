@@ -41,7 +41,7 @@ const EducationModel = forwardRef((props, ref) => {
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2020-Present</small>
+                  <small className="text-light">2020-2024</small>
                 </div>
               </article>
               <article className="aboutmecomponent__details">

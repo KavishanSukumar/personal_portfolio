@@ -31,7 +31,7 @@ const ExperienceModel = forwardRef((props, ref) => {
               <article className="aboutmecomponent__details">
                 <MdOutlineWorkOutline className="aboutmecomponent__details-icon" />
                 <div>
-                  <h4>Trainee Software Engineer</h4>
+                  <h4>Trainee Software Engineer (6 Months)</h4>
                   <small className="text-light">
                     <span style={{ fontWeight: "bold" }}>
                       Inova IT Systems (Pvt) Ltd
@@ -50,7 +50,7 @@ const ExperienceModel = forwardRef((props, ref) => {
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2022-Present</small>
+                  <small className="text-light">2022-2023</small>
                 </div>
               </article>
             </div>

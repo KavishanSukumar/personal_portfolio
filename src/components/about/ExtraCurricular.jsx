@@ -37,7 +37,7 @@ const ExtraCurricularModel = forwardRef((props, ref) => {
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2020 - 2022</small>
+                  <small className="text-light">2020 - 2021</small>
                 </div>
               </article>
               <article className="aboutmecomponent__details">
@@ -49,7 +49,7 @@ const ExtraCurricularModel = forwardRef((props, ref) => {
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2014-2015</small>
+                  <small className="text-light">2016-2018</small>
                 </div>
               </article>
               <article className="aboutmecomponent__details">
