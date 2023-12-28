@@ -5,17 +5,20 @@ import { FaAward } from "react-icons/fa";
 import { GoBook } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
 import { SiFuturelearn } from "react-icons/si";
+import { SiAcademia } from "react-icons/si";
 
 import EducationModel from "./EducationModel";
 import ExperienceModel from "./ExperienceModel";
 import AchievementsModel from "./AchievementsModel";
 import CertificationsModel from "./CertificationsModel";
+import ExtraCurricularModel from "./ExtraCurricular";
 
 function About() {
   const educationmodelRef = React.useRef();
   const experiencemodelRef = React.useRef();
   const achievementsmodelRef = React.useRef();
   const certificationsmodelRef = React.useRef();
+  const extraCurricularmodelRef = React.useRef();
 
   const OpenModelEducation = () => {
     educationmodelRef.current.OpenModelEducation();
@@ -28,6 +31,9 @@ function About() {
   };
   const OpenModelCertifications = () => {
     certificationsmodelRef.current.OpenModelCertifications();
+  };
+  const OpenModelExtraCurricular = () => {
+    extraCurricularmodelRef.current.OpenModelExtraCurricular();
   };
 
   return (
@@ -49,32 +55,44 @@ function About() {
               <small>College degree and other</small>
             </article>
             <EducationModel ref={educationmodelRef} />
+
             <article className="about__card" onClick={OpenModelExperience}>
               <GiSkills className="about__icon" />
               <h5>Experience</h5>
               <small>6 month Working</small>
             </article>
             <ExperienceModel ref={experiencemodelRef} />
+
             <article className="about__card" onClick={OpenModelAchievements}>
-              <FaAward className="about__icon" />
-              <h5>Extra Curricular Activities</h5>
-              <small>Activities other than Acadamics</small>
+              <SiAcademia className="about__icon" />
+              <h5>Achievements</h5>
+              <small>Achievements relavant to Acadamics</small>
             </article>
             <AchievementsModel ref={achievementsmodelRef} />
+
             <article className="about__card" onClick={OpenModelCertifications}>
               <SiFuturelearn className="about__icon" />
               <h5>Certifications</h5>
               <small>Online Certification</small>
             </article>
             <CertificationsModel ref={certificationsmodelRef} />
+
+            <article className="about__card" onClick={OpenModelExtraCurricular}>
+              <FaAward className="about__icon" />
+              <h5>Extra Curricular Activities</h5>
+              <small>Activities other than Acadamics</small>
+            </article>
+            <ExtraCurricularModel ref={extraCurricularmodelRef} />
           </div>
           <p>
-            A flexible & enthusiastic computer science undergraduate, successful
-            at managing multiple priorities with a positive attitude and willing
-            to contribute his maximum effort to the organization while learning
-            new technologies. A team player with good social skills and also
-            likes to connect with industry individuals to gain valuable
-            experience in Professional IT environments.
+            As a versatile and enthusiastic undergraduate pursuing Software
+            Engineering, successful at managing multiple priorities with a
+            positive attitude. My coding skills have been honed through trial
+            and error. I am driven to contribute my utmost to the success of any
+            organization, while also staying up to date with the latest
+            technologies. I thrive in collaborative team settings and possess
+            strong social skills. I actively seek out industry connections to
+            gain valuable insights into the dynamic world of Software.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's&nbsp;Talk

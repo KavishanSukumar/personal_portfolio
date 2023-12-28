@@ -32,7 +32,7 @@
 
 .experience__details {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .experience__details-icon {
@@ -68,4 +68,5 @@
         padding: 2rem 1rem;
         margin: 0 auto;
     }
+
 }

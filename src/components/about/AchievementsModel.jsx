@@ -1,7 +1,7 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 import ReactDOM from "react-dom";
 import "./about.css";
-import { CiStar } from "react-icons/ci";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 const AchievementsModel = forwardRef((props, ref) => {
   const [display, setDisplay] = useState(false);
@@ -26,42 +26,34 @@ const AchievementsModel = forwardRef((props, ref) => {
         <div onClick={CloseModelAchievements} className="modal__backdrop" />
         <div className="modal__box">
           <div className="aboutmecomponent__container">
-            <h3>Extra Curricular Activities</h3>
+            <h3>Achievements</h3>
             <div className="aboutmecomponent__content">
               <article className="aboutmecomponent__details">
-                <CiStar className="aboutmecomponent__details-icon" />
+                <FaArrowAltCircleUp className="aboutmecomponent__details-icon" />
                 <div>
-                  <h4>Member of Computer Society</h4>
-                  <small className="text-light">
-                    St Peter's College, Colombo 04
-                  </small>
+                  <h4>
+                    Nocturne research abstract was published in the Annual
+                    Research Symposium 2023 organized by the University of
+                    Colombo
+                  </h4>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2014-2015</small>
+                  <small className="text-light">2023</small>
                 </div>
               </article>
               <article className="aboutmecomponent__details">
-                <CiStar className="aboutmecomponent__details-icon" />
+                <FaArrowAltCircleUp className="aboutmecomponent__details-icon" />
                 <div>
-                  <h4>Secretary of Information Technology Unit</h4>
-                  <small className="text-light">
-                    Noor International School, Kalutara South
-                  </small>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2014-2015</small>
+                  <h4>HackX 2021 -Finalist</h4>
                 </div>
               </article>
               <article className="aboutmecomponent__details">
-                <CiStar className="aboutmecomponent__details-icon" />
+                <FaArrowAltCircleUp className="aboutmecomponent__details-icon" />
                 <div>
-                  <h4>Prefect</h4>
+                  <h4>Participated in,</h4>
                   <small className="text-light">
-                    Noor International School, Kalutara South
+                    INSL-2021 | Revolux-2021 | Fresh Hack 1.0 | ReidXtreme 1.0
                   </small>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <small className="text-light">2014-2015</small>
                 </div>
               </article>
             </div>

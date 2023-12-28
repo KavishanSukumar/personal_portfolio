@@ -4,12 +4,11 @@ import Main from "./pages/main/Main";
 import "./app.css";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
   }, []);
   return <div className="App">{loading ? <Loading /> : <Main />}</div>;
 }

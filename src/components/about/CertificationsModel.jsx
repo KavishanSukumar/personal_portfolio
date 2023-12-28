@@ -34,19 +34,31 @@ const CertificationsModel = forwardRef((props, ref) => {
               >
                 <TbFileCertificate className="aboutmecomponent__details-icon" />
                 <div>
-                  <h4>
-                    Design Patterns, University of Alberta , Coursera.org
-                    (Following)
-                  </h4>
+                  <h4>Design Patterns, University of Alberta, Coursera.org</h4>
                 </div>
               </article>
-              <article className="aboutmecomponent__details">
+              <article
+                style={{ gridTemplateColumns: "1fr 11fr " }}
+                className="aboutmecomponent__details"
+              >
+                <TbFileCertificate className="aboutmecomponent__details-icon" />
+                <div>
+                  <h4>Advanced MySQL Topics, Meta, Coursera.org</h4>
+                </div>
+              </article>
+              <article
+                style={{ gridTemplateColumns: "1fr 11fr " }}
+                className="aboutmecomponent__details"
+              >
                 <TbFileCertificate className="aboutmecomponent__details-icon" />
                 <div>
                   <h4>What is Data Science?, IBM , Cousera.org</h4>
                 </div>
               </article>
-              <article className="aboutmecomponent__details">
+              <article
+                style={{ gridTemplateColumns: "1fr 11fr " }}
+                className="aboutmecomponent__details"
+              >
                 <TbFileCertificate className="aboutmecomponent__details-icon" />
                 <div>
                   <h4>Bootcamp with ShapeAI, 2021</h4>

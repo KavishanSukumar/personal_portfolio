@@ -5,14 +5,15 @@ import entero from "../../assets/entero.png";
 import blog from "../../assets/blog.jpg";
 import con360 from "../../assets/con360.png";
 import newsapp from "../../assets/newapp.png";
+import Nocturne from "../../assets/Nocturne.png";
 const data = [
   {
     id: 1,
-    title: "RideNSave",
-    image: RideNSave,
+    title: "Nocturne",
+    image: Nocturne,
     description:
-      "An Uber App clone using Google Map API where an user can select the pickup location and drop location and see the route and the cost for the ride.",
-    github: "https://github.com/KavishanSukumar/Uber-Clone-React-Native",
+      "An ongoing research project on providing real-time driving assistance at night in the Sri Lankan context.",
+    github: null,
   },
   {
     id: 2,
@@ -24,14 +25,6 @@ const data = [
   },
   {
     id: 3,
-    title: "Blog",
-    image: blog,
-    description:
-      "A general blog web application where users can veiw blogs and users with an account can write blog and upload with an image.",
-    github: "https://github.com/KavishanSukumar/MERN-Blog",
-  },
-  {
-    id: 4,
     title: "Construct360(Contruction Management System)",
     image: con360,
     description:
@@ -39,12 +32,29 @@ const data = [
     github: "https://github.com/KavishanSukumar/Construct360deg",
   },
   {
+    id: 4,
+    title: "Blog",
+    image: blog,
+    description:
+      "A general blog web application where users can veiw blogs and users with an account can write blog and upload with an image.",
+    github: "https://github.com/KavishanSukumar/MERN-Blog",
+  },
+
+  {
     id: 5,
     title: "News App",
     image: newsapp,
     description:
       "An new reading app where users can read news from different sources and can search for news. With the integration of Alan AI, users can ask for news and the app will read the news.",
     github: "https://github.com/KavishanSukumar/News-Reading-App",
+  },
+  {
+    id: 6,
+    title: "RideNSave",
+    image: RideNSave,
+    description:
+      "An Uber App clone using Google Map API where an user can select the pickup location and drop location and see the route and the cost for the ride.",
+    github: "https://github.com/KavishanSukumar/Uber-Clone-React-Native",
   },
 ];
 export const Projects = () => {
@@ -62,9 +72,13 @@ export const Projects = () => {
               <h3>{title}</h3>
               <small className="text-light">{description}</small>
               <div className="project__item-cta">
-                <a href={github} className="btn btn-primary" target={"_blank"}>
-                  Github
-                </a>
+                {github != null ? (
+                  <a href={github} className="btn btn-primary" target="_blank">
+                    Github
+                  </a>
+                ) : (
+                  <span className="btn btn-disabled">Github</span>
+                )}
               </div>
             </article>
           );
