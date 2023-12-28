@@ -1,13 +1,13 @@
-# Getting Started with Create React App
+# My Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio repository!
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This repository contains the code and projects related to my personal portfolio. Here, you'll find information about me, my skills, projects I've worked on, and more.
 
-### `npm start`
+## About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-)
+I'm Sukumar Kavishan, a Final-year Software Engineering Undergraduate passionate about Software Development. This portfolio showcases my journey, skills, and experiences in the field of Software Engineering.
+
+Thank you for visiting!
