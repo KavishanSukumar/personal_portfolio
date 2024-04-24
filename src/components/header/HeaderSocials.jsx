@@ -1,6 +1,7 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaHackerrank, FaStackOverflow } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const HeaderSocials = () => {
   return (
@@ -22,6 +23,9 @@ const HeaderSocials = () => {
         target={"_blank"}
       >
         <FaStackOverflow />
+      </a>
+      <a href="https://leetcode.com/kavishansukumar/" target={"_blank"}>
+        <SiLeetcode />
       </a>
     </div>
   );

@@ -46,7 +46,7 @@ const ExperienceModel = forwardRef((props, ref) => {
                     <span style={{ fontWeight: "bold" }}>
                       Technologies:&nbsp;
                     </span>
-                    Springboot, Power BI, ClickUp API
+                    Springboot, Power BI, ClickUp API, React(TypeScript)
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>
